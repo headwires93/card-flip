@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+    <!-- basic.html -->
+    <title>Flipcard Timeline</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset = "UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+            <h1>Cardflip Timeline - Click to Flip the Cards</h1>
+                <div class="steps_box">
+                    <div class="steps imgfix">
+                        <div class="steps_one">
+                            <div id="first" class="step flip-card">
+                                <span class="step_number"></span>
+                                <div class="flip-card-inner tiny_bounce">
+                                    <div class="flip-card-front">
+                                        <h4>First Event</h4>
+                                        <span class="page-corner">
+                                            <i class="fas fa-long-arrow-alt-right" aria hidden="true"></i>                                 
+                                            </span>
+                                        </div>
+                                        <div class="flip-card-back">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor, nisi eu imperdiet bibendum, purus eros auctor tortor, eget placerat risus ante vitae justo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="third" class="step flip-card">
+                                <span class="step_number"></span>
+                                <div class="flip-card-inner tiny_bounce">
+                                    <div class="flip-card-front">
+                                        <h4>Third Event</h4>
+                                        <span class="page-corner">
+                                            <i class="fas fa-long-arrow-alt-right" aria hidden="true"></i>                                 
+                                            </span>
+                                        </div>
+                                        <div class="flip-card-back">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor, nisi eu imperdiet bibendum, purus eros auctor tortor, eget placerat risus ante vitae justo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fifth" class="step flip-card">
+                                <span class="step_number"></span>
+                                <div class="flip-card-inner tiny_bounce">
+                                    <div class="flip-card-front">
+                                        <h4>Fifth Event</h4>
+                                        <span class="page-corner">
+                                            <i class="fas fa-long-arrow-alt-right" aria hidden="true"></i>                                 
+                                            </span>
+                                        </div>
+                                        <div class="flip-card-back">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor, nisi eu imperdiet bibendum, purus eros auctor tortor, eget placerat risus ante vitae justo.</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="steps_two">
+                                <div id="second" class="step flip-card">
+                                <span class="step_number"></span>
+                                <div class="flip-card-inner tiny_bounce">
+                                    <div class="flip-card-front">
+                                        <h4>Second Event</h4>
+                                        <span class="page-corner">
+                                            <i class="fas fa-long-arrow-alt-right" aria hidden="true"></i>                                 
+                                            </span>
+                                        </div>
+                                        <div class="flip-card-back">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor, nisi eu imperdiet bibendum, purus eros auctor tortor, eget placerat risus ante vitae justo.</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fourth" class="step flip-card">
+                                <span class="step_number"></span>
+                                <div class="flip-card-inner tiny_bounce">
+                                    <div class="flip-card-front">
+                                        <h4>Fourth Event</h4>
+                                        <span class="page-corner">
+                                            <i class="fas fa-long-arrow-alt-right" aria hidden="true"></i>                                 
+                                            </span>
+                                        </div>
+                                        <div class="flip-card-back">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor, nisi eu imperdiet bibendum, purus eros auctor tortor, eget placerat risus ante vitae justo.</p> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+            </div>
+        </body>
+
+    <script>
+
+        const flipCards = document.querySelectorAll(".flip-card");
+
+        function flipCard(card) {
+            card.addEventListener("click", function (event) {
+                card.classList.contains("active") ? card.classList.remove("active") :  card.classList.add("active")
+            });
+          }
+        
+        flipCards.forEach(flipCard);
+    </script>
+
+
